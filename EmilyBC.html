@@ -4,47 +4,359 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/3c0e49cf33.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css"
+    <link rel="stylesheet" href="style.css">
     <title></title>
 </head>
 <body>
     <header class="header">
         <!-- Creating a navigation bar menu for the website  -->
-        <a href="" class="logo"><img src="emilybakescake.png" alt="Bakery Logo"></a>
+        <a href="" class="logo"><img src="cakepics/emilybakescake.png" alt="Bakery Logo"></a>
         <nav class="navbar">
-          <a href="">Home</a>
-          <a href="">Custom Cakes</a>
-          <a href="">Menu</a>
-          <a href="">Pre-Order</a>
-          <a href="">About</a>
-          <a href="">Review</a>
-          <a href="">Contact</a>
+          <a href="#home">Home</a>
+          <a href="#cakes">Menu</a>
+          <a href="#customcakes">Custom Cakes</a>
+          <a href="#about">About</a>
+          <a href="#review">Review</a>
+          <a href="#contact">Contact</a>
+          <a href="addcakedecor.html">Cake Decorations</a>
+          <a href="order.html">Order</a>
         </nav>
         <!-- Creating a cart, search, and menu icon-->
          <div class="icons">
             <div class="search-icon"><i class="fas fa-search"></i></div>
-            <div class="cart-icon"><i class="fa-solid fa-cart-shopping"></i></div>
             <div class="menu-icon"><i class="fa-solid fa-bars"></i></div>
          </div>
 
+         <!--Start here-->
          <div class="search-form">
-            <input type="search" name="search" id="search-box" placeholder="search here...">
+            <input type="search" name="search" id="search-box" placeholder="search here..."/>
             <label for="search-box" class="fas fa-search"></label>
          </div>
-         <div class="cart-items-container">
-            <div class="cart-item">
-                <span class="fas fa-times"></span>
-                <img src="" alt="" />
-                <div class="content">
-                    <h3>Brownie</h3>
-                </div>
-            
-            </div>
-         </div>
-
-
-
+         
     </header>
+    <section class="home" id="home">
+        <div class="hero">
+            <h3>Where every slice is a celebration</h3>
+            <p>Discover our delicious creations and make your moments unforgettable!</p>
+        </div>
+    </section>
+    <section class="cakes" id="cakes">
+        <h3 class="title">Our <span>cakes</span></h3>
+        <div class="wrapper">
+            <!-- item 1-->
+            <div class="cake-card">
+                <img src="cakepics/Rainbowcake.jpg" alt="">
+                <h3>Birthday Celebration</h3>
+                <div class="price">$22.99</div>
+            </div>
+            <!--item 2-->
+            <div class="cake-card">
+                <img src="cakepics/Almond Delight.jpg" alt="">
+                <h3>Almond Delight</h3>
+                <div class="price">$22.99</div>
+            </div>
+            <!--item 3-->
+            <div class="cake-card">
+                <img src="cakepics/Lemon and Cream Cheese.jpg" alt="">
+                <h3>Lemon and Cream Cheese</h3>
+                <div class="price">$22.99</div>
+            </div>
+            <!--item 4-->
+            <div class="cake-card">
+                <img src="cakepics/Black forest.jpg" alt="">
+                <h3>Black Forest</h3>
+                <div class="price">$22.99</div>
+            </div>
+            <!--item 5-->
+            <div class="cake-card">
+                <img src="cakepics/German Chocolate.jpg" alt="">
+                <h3>German Chcolate Cream Cheese</h3>
+                <div class="price">$22.99</div>
+            </div>
+            <!--item 6-->
+            <div class="cake-card">
+                <img src="cakepics/Chocolate ganache.jpg" alt="">
+                <h3>Chocolate Ganache</h3>
+                <div class="price">$22.99</div>
+            </div>
+            <!--item 7-->
+            <div class="cake-card">
+                <img src="cakepics/Italian Cream.jpg" alt="">
+                <h3>Italian Cream</h3>
+                <div class="price">$22.99</div>
+            </div>
+            <!--item 8-->
+            <div class="cake-card">
+                <img src="cakepics/Lemon Doberge.jpg" alt="">
+                <h3>Lemon Doberge</h3>
+                <div class="price">$22.99</div>
+            </div>
+            <!--item 9-->
+            <div class="cake-card">
+                <img src="cakepics/Chocolate Doberge.jpg" alt="">
+                <h3>Chocolate Doberge</h3>
+                <div class="price">$22.99</div>
+            </div>
+            <!--item 10-->
+            <div class="cake-card">
+                <img src="cakepics/Half Half.jpg" alt="">
+                <h3>Half & Half Doberge Cake (Lemon and Chocolate)</h3>
+                <div class="price">$22.99</div>
+            </div>
+            <!--item 11-->
+            <div class="cake-card">
+                <img src="cakepics/Pecan Praline.jpg" alt="">
+                <h3>Pecan Praline Cream Cheese</h3>
+                <div class="price">$22.99</div>
+            </div>
+            <!--item 12-->
+            <div class="cake-card">
+                <img src="cakepics/Banana Chocolate.jpg" alt="">
+                <h3>Chocolate Banana</h3>
+                <div class="price">$22.99</div>
+            </div>
+            <!--item 13-->
+            <div class="cake-card">
+                <img src="cakepics/Strawberry Cake.jpg" alt="">
+                <h3>Strawberry Delight</h3>
+                <div class="price">$22.99</div>
+            </div>
+            <!--item 14-->
+            <div class="cake-card">
+                <img src="cakepics/Oreo Cake.jpg" alt="">
+                <h3>Oreo</h3>
+                <div class="price">$22.99</div>
+            </div>
+        </div>
+    </section>
+
+    <!--Cakle orders and prices section -->
+    <section class="cake-orders container reveable revealed" id="customcakes">
+        <div class="row">
+            <div class="col-md-6">
+                <h1 class="title"><span>cake</span> orders</h1>
+                <h3 class="center-text">CAKE ORDERS</h3>
+                <p class="center-text">
+                    Our cakes are baked fresh to order. 
+                    Make your celebration cake unique by selecting from our classic designs, choosing from our 
+                    fourteen signature designs, or personalizing it with your own custom artwork.
+                </p>
+                <h3 class="center-text">1. CHOOSE A FLAVOR</h3>
+                <p class="center-text">Vanilla, Almond, Yellow, Devil’s Food Chocolate, Chocolate, Strawberry</p>
+                <h3 class="center-text">2. FILLING FLAVORS</h3>
+                <p class="center-text">White Buttercream, Chocolate Buttercream, Almond Buttercream, Cream
+                    Cheese, Lemon Curd, Strawberry, Rum/Strawberry, Raspberry, Pecan Praline,
+                    Chocolate Mousse, Lemon Mousse, Strawberry Mousse, Raspberry Mousse,
+                    White Chocolate Mousse, and Mango Mousse.
+                </p>
+                <h3 class="center-text">3. ICING FLAVORS</h3>
+                <p class="center-text">White Buttercream, Chocolate Buttercream, Almond Buttercream, White
+                    Chocolate Buttercream, Cream Cheese, Chocolate Ganache</p>
+                <h3 class="center-text">4. CHOOSE A SIZE & SHAPE</h3>
+                <p class="center-text">Round Double Layer or Sheet Cake</p>
+                <h3 class="center-text">5. CHOOSE A COLOR</h3>
+                <p class="center-text">"we can not guarantee a color match but will get as close as we can".</p>
+                <h3 class="center-text">6. ADD AN INSCRIPTION</h3>
+                <p class="center-text">Tell us what you want the cake to say and in what color</p>
+                <h3 class="center-text">7. MAKE IT SPECIAL</h3>
+                <p class="center-text">Custom artwork and designs require a staff consultation</p>
+                <p class="center-text">
+                    We can accommodate most orders with a 2-3 day's notice, but we bake extras every day for cake emergencies. Additional
+                    decorations will incur additional charges.
+                </p>
+                <p class="center-text">
+                    *Any cancellations or changes made within 72 hours of picking up an order will be subject to a change or cancellation fee.
+                </p>
+            </div>
+    
+            <div class="col-md-6">
+                <h1 class="title"><span>flavors</span> & pricing</h1>
+                <h3 class="center-text">ICING AND WRITING COLORS</h3>
+                <p class="center-text">"Red, Royal Blue, Green, Yellow, Orange, Baby Pink, Baby Blue, Pastel Green, Pastel Yellow, Lavender
+                    Hot, Pink, Sky Blue, Neon Green, Yellow, Orange, Purple, Fall Red, Fall Green, Fall Yellow, Fall Orange, Brownie
+                    Ivory, Golden Yellow, Gold, Fuchsia, Maroon, Burgundy, Burnt Orange, Turquoise, Navy Blue, Gay/Silver
+                    Black, White"</p>
+                <h3 class="center-text">ROUND DOUBLE LAYER PRICING</h3>
+                <h3 class="center-text">
+                    <strong>
+                        <u>"The prices listed are for signature designs only. Custom cake pricing will vary based on design"</u>
+                    </strong>
+                </h3>
+    
+                <table class="full-width">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <p class="center-text">Servings</p>
+                                <p class="center-text">6" Round Double Layer (Serves 4-6)</p>
+                                <p class="center-text">8" Round Double Layer (Serves 12-15)</p>
+                                <p class="center-text">10" Round Double Layer (Serves 25-30)</p>
+                                <p class="center-text">12" Round Double Layer (Serves 35)</p>
+                                <p class="center-text">14" Round Double Layer (Serves 40)</p>
+                                <p class="center-text">16" Round Double Layer (Serves 85)</p>
+                            </td>
+                            <td class="vertical-align">
+                                <p class="center-text">Signature Design</p>
+                                <p class="center-text">$21</p>
+                                <p class="center-text">$30</p>
+                                <p class="center-text">$60</p>
+                                <p class="center-text">$100</p>
+                                <p class="center-text">$140</p>
+                                <p class="center-text">$180</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+    
+                <h3 class="center-text">SHEET CAKE PRICING</h3>
+                <table class="full-width">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <p class="center-text">Servings</p>
+                                <p class="center-text">1/4 Sheet Double Layer (Serves 15-20)</p>
+                                <p class="center-text">1/2 Sheet Double Layeer (Serves 30-50)</p>
+                                <p class="center-text">Full Sheet Double Layer (Serves 90-100)</p>
+                            </td>
+                            <td class="vertical-align">
+                                <p class="center-text">Signature Design</p>
+                                <p class="center-text">$40</p>
+                                <p class="center-text">$100</p>
+                                <p class="center-text">$200</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+    
+                <p class="center-text">To place an order for a custom cake, please submit a request <a href="order.html"><u>here.</u></a></p>
+            </div>
+        </div>
+    </section>
+    
+
+
+    <section class="about" id="about">
+        <h1 class="title"><span>about</span> us</h1>
+        <div class="container">
+            <div class="img">
+                <img src="Emily Bakes Cakes.jpg" alt="Emily">
+            </div>
+            <div class="content">
+                <h3> What Makes Us Different</h3>
+                <p>Emily Bakes Cakes sets itself apart from other cake shops through Emily Boudreaux's deep personal connection to baking, which began with her grandmother. 
+                    Inspired by Mommie’s tradition of making a special cake for each important occasion, Emily carries on this legacy by creating custom cakes that bring 
+                    joy to her customers' big moments.</p>
+                <p>What also makes Emily's bakery unique is her time spent in Europe, where she refined her skills in Paris and Salzburg. Her experience with Bavarian and 
+                    Austrian baking techniques, combined with traditional family recipes, gives her cakes a distinct European flair.</p>
+                <p>Unlike many commercial bakeries, Emily Bakes Cakes makes everything from scratch, blending her family heritage with expert European craftsmanship. This 
+                    attention to detail and passion for quality have made her shop a go-to destination for customers looking for extraordinary cakes near the Galleria.</p>
+                <a href="" class="btn"> learn more </a>
+            </div>
+        </div>
+    </section>
+    <!-- review section begins-->
+    <!--review card 1-->
+     <section class="review" id="review">
+        <h1 class="title">customer's <span>review</span></h1>
+        <div class="wrapper">
+            <div class="review-card">
+                <img src="cakepics/quotationmarks.jpeg" alt="">
+                <p>"Emily Bakes Cakes made my wedding cake, and it was beyond perfect! The flavors were rich, the design was stunning, and you can really tell everything is 
+                    made from scratch. I’ll never go anywhere else for a special occasion cake!"</p>
+                <img class="customer" src="cakepics/smilingman1.jpg" alt="">
+                <h3>Jake Philips</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <!--review card 2-->
+            <div class="review-card">
+                <img src="cakepics/quotationmarks.jpeg" alt="">
+                <p>"I ordered a custom birthday cake from Emily, and it was the best cake I’ve ever had. The attention to detail was incredible, and the European-style flavors 
+                    were just divine. Everyone at the party couldn’t stop raving about it!"</p>
+                <img class="customer" src="cakepics/smilingwoman2.jpeg" alt="">
+                <h3>Sarah Mckinzie</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <!--review card 3-->
+            <div class="review-card">
+                <img src="cakepics/quotationmarks.jpeg" alt="">
+                <p>"The pastries and cakes at Emily Bakes Cakes are next level! You can taste the love and skill that go into every bite. The blend of European techniques and 
+                    homemade recipes makes this place a gem!"</p>
+                <img class="customer" src="cakepics/smilingwomen1.jpg" alt="">
+                <h3>Olivia Cashmere</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+        </div>
+     </section>
+     <!--contact section begins-->
+     <section class="contact" id="contact">
+        <h1 class="title"><span>contact</span> us</h1>
+        <div class="contents">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13857.315262966056!2d-95.4634342!3d29.7391955!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640c16eeef3bdd1%3A0x7e03fa20d63c5caf!2sThe%20Galleria!5e0!3m2!1sen!2sus!4v1728544313932!5m2!1sen!2sus" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <form action="">
+                <h3>get in touch</h3>
+                <!--name input box-->
+                <div class="input-box">
+                    <span class="fas fa-user"></span>
+                    <input type="text" name="name" placeholder="name">
+                </div>
+                <!--2nd input box-->
+                <div class="input-box">
+                    <span class="fas fa-envelope"></span>
+                    <input type="text" name="email" placeholder="email">
+                </div>
+                <!--3rd input box-->
+                <div class="input-box">
+                    <span class="fas fa-phone"></span>
+                    <input type="text" name="phone" placeholder="phone">
+                </div>
+
+                <a href="" class="btn">contact now</a>
+            </form>
+        </div>
+     </section>
+     <footer class="footer">
+        <div class="social-media">
+            <a href="" class="fab fa-facebook-f"></a>
+            <a href="" class="fab fa-twitter"></a>
+            <a href="" class="fab fa-instagram"></a>
+            <a href="" class="fab fa-linkedin"></a>
+            <a href="" class="fab fa-pinterest"></a>
+        </div>
+        <div class="links">
+            <a href="#home">Home</a>
+            <a href="#cakes">Menu</a>
+            <a href="order.html">Order</a>
+            <a href="#about">About</a>
+            <a href="#review">Review</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="credits">
+            created by <span>EmilyBakescake with Jimmy</span> | all rights reserved.
+        </div>
+     </footer>
     <script src="script.js"></script>
 </body>
 </html>

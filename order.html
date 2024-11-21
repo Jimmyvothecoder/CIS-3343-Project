@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <title>Custom Cake Order Form</title>
+</head>
+<body>
+<div class="container">
+    <h1>Custom Cake Order Form</h1>
+    <form>
+        <!-- Customer Information -->
+        <div class="form-section">
+            <h2>Customer Information</h2>
+            <label for="customerName">First Name:</label>
+            <input type="text" id="customerName" name="customerName" required>
+
+            <label for="customerName">Last Name:</label>
+            <input type="text" id="customerName" name="customerName" required>
+
+            <label for="customerType">Customer Type:</label>
+            <select id="customerType" name="customerType" required>
+                <option value="Retail">Retail</option>
+                <option value="Corporate">Corporate</option>
+            </select>
+
+            <label for="preferredCustomer">Preferred Customer:</label>
+            <select id="preferredCustomer" name="preferredCustomer">
+                <option value="No">No</option>
+                <option value="Yes">Yes</option>
+            </select>
+        </div>
+
+        <!-- Order Information -->
+        <div class="form-section">
+            <h2>Order Information</h2>
+            <label for="productCategory">Product Category:</label>
+            <select id="productCategory" name="productCategory" required>
+                <option value="Cakes">Cakes</option>
+                <option value="Pastries">Pastries</option>
+                <option value="Cup Cakes">Cup Cakes</option>
+                <option value="Cookies">Cookies</option>
+                <option value="Petit Fours">Petit Fours</option>
+                <option value="Pies">Pies</option>
+                <option value="Breads">Breads</option>
+                <option value="Seasonal Products">Seasonal Products</option>
+            </select>
+
+            <label for="pickupDate">Pickup Date (at least 2 days in advance):</label>
+            <input type="date" id="pickupDate" name="pickupDate" required>
+
+            <label for="layerCount">Number of Layers:</label>
+            <input type="number" id="layerCount" name="layerCount" min="1" max="10">
+
+            <label for="fillingOptions">Filling Options (Layer 1 is bottom-most):</label>
+            <textarea id="fillingOptions" name="fillingOptions" placeholder="Enter filling choices for each layer"></textarea>
+
+            <label for="customizationDetails">Customization Details:</label>
+            <textarea id="customizationDetails" name="customizationDetails" placeholder="Describe any custom decorations or themes"></textarea>
+
+            <label for="uploadReference">Upload Reference Photo:</label>
+            <input type="file" id="uploadReference" name="uploadReference" accept="image/*">
+        </div>
+
+        <!-- Payment Information -->
+        <div class="form-section">
+            <h2>Payment Information</h2>
+            <label for="depositAmount">Deposit Amount (50% minimum):</label>
+            <input type="number" id="depositAmount" name="depositAmount" min="0" step="0.01" required>
+
+            <label>Payment Method:</label>
+            <div class="checkbox-group">
+                <input type="radio" id="paymentCash" name="paymentMethod" value="Cash" required>
+                <label for="paymentCash">Cash</label>
+
+                <input type="radio" id="paymentDebit" name="paymentMethod" value="Debit" required>
+                <label for="paymentDebit">Debit</label>
+
+                <input type="radio" id="paymentCredit" name="paymentMethod" value="Credit" required>
+                <label for="paymentCredit">Credit</label>
+            </div>
+        </div>
+
+        <!-- Agreement -->
+        <div class="form-section">
+            <h2>Agreement</h2>
+            <label>
+                <input type="checkbox" name="agreeToTerms" required> I agree that changes to decoration may result in additional costs, and that orders cannot be canceled after baking begins.
+            </label>
+        </div>
+
+        <div class="button-container">
+            <button type="submit">Submit Order</button>
+        </div>
+    </form>
+</div>
+</body>
+</html>

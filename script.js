@@ -1,35 +1,33 @@
-const mysql = require('mysql2');
+// functions for the search icon to appear 
+const searchIcon = document.querySelector('.search-icon');
+const searchIForm = document.querySelector('.search-form');
+const menuIcon = document.querySelector('.menu-icon');
+const navbar = document.querySelector('.navbar');
 
-// Create a connection to the database
-const connection = mysql.createConnection({
-  host: 'cis2368identifier1.cposem4a2i5v.us-east-2.rds.amazonaws.com',
-  user: 'admin',         // your MySQL username
-  password: 'cis2024jim', // your MySQL password
-  database: 'cis2368db'
+searchIcon.addEventListener('click', () => {
+    searchIForm.classList.add('active');
+    cartItemsContainer.classList.remove('active');
+    navbar.classList.remove('active');
 });
 
-// Connect to MySQL
-connection.connect((err) => {
-  if (err) {
-    console.error('Error connecting to MySQL:', err);
-    return;
-  }
-  console.log('Connected to MySQL database');
+menuIcon.addEventListener('click', () => {
+    navbar.classList.add('active');
+    searchIForm.classList.remove('active');
+    cartItemsContainer.classList.remove('active');
 });
 
-// Example: Run a simple query
-connection.query('SELECT * FROM menu', (err, results) => {
-  if (err) {
-    console.error('Error executing query:', err);
-    return;
-  }
-  console.log(results);
+// functions for the cart icon to appear
+const cartIcon = document.querySelector('.cart-icon');
+const cartItemsContainer = document.querySelector('.cart-items-container');
+
+cartIcon.addEventListener('click', () => {
+    cartItemsContainer.classList.add('active');
+    searchIForm.classList.remove('active');
+    navbar.classList.remove('active');
 });
 
-// Close the connection
-connection.end();
-
-
-
-
-
+window.onscroll = ()=>{
+    cartItemsContainer.classList.remove('active');
+    searchIForm.classList.remove('active');
+    navbar.classList.remove('active');
+}
